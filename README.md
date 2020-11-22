@@ -11,11 +11,26 @@ To run all tests, from the root directory of this project run:
 ```
 
 ## Features
- - Sustainable way to change endpoints in one place
- - Sustainable way to build up json queries
+ - Get and Post tests are seperated into their own tests
+ - Example PostObject class for which we have generate a json scheme (including test)
 
 ## Useful Info
 All the tests in this code hit endpoints at:
 ```
 https://jsonplaceholder.typicode.com/
+```
+
+## Structure of a Rest Assured Test
+```
+Given() lets you:
+    pass the request headers
+    query and path param
+    body
+    cookies and headers
+When() lets you:
+    get
+    post
+    put
+Then() lets you:
+    perform assertion conditions
 ```
